@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Aplikasi PPDB SMP</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/boot.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style_common.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style1.css">
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic'>
+<script src="assets/js/modernizr.custom.69142.js"></script>
+<script src="assets/js/jquery-1.10.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js" ></script>
+
+<script type="text/javascript">
+  * {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    background: #333 url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/low_contrast_linen.png');
+  }
+
+  ul {
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+  @-moz-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-webkit-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @-o-keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+  }
+
+  .round {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;    
+    text-decoration: none;    
+    text-align: center;
+    font-size: 25px;    
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    letter-spacing: -.065em;
+    font-family: "Hammersmith One", sans-serif;   
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+    border-radius: 300px;
+    z-index: 1;
+    border-width: 4px;
+    border-style: solid;
+  }
+
+  .round:hover {
+    width: 130%;
+    height: 130%;
+    left: -15%;
+    top: -15%;
+    font-size: 33px;
+    padding-top: 38px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    z-index: 2;
+    border-size: 10px;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+
+  a.red {
+    background-color: rgba(239,57,50,1);
+    color: rgba(133,32,28,1);
+    border-color: rgba(133,32,28,.2);
+  }
+
+  a.red:hover {
+    color: rgba(239,57,50,1);
+  }
+
+  a.green {
+    background-color: rgba(1,151,171,1);
+    color: rgba(0,63,71,1);
+    border-color: rgba(0,63,71,.2);
+  }
+
+  a.green:hover {
+    color: rgba(1,151,171,1);
+  }
+
+  a.yellow {
+    background-color: rgba(252,227,1,1);
+    color: rgba(153,38,0,1);
+    border-color: rgba(153,38,0,.2);
+  }
+
+  a.yellow:hover {
+    color: rgba(252,227,1,1);
+  }
+
+  .round span.round {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    font-size: 1px;
+    border: none;
+    padding: 40% 20% 0 20%;
+    color: #fff;
+  }
+
+  .round span:hover {
+    opacity: .85;
+    font-size: 16px;
+    -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    -o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    text-shadow: 0 1px 1px rgba(0,0,0,.5);  
+  }
+
+  .green span {
+    background: rgba(0,63,71,.7);   
+  }
+
+  .red span {
+    background: rgba(133,32,28,.7);   
+  }
+
+  .yellow span {
+    background: rgba(161,145,0,.7); 
+
+  }
+</script>
+
+</head>
+<body>
+<div id="page-top" class="index">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand page-scroll" href="#page-top">Aplikasi PPDB SMP Kab Tegal</a></div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#page-top">Home</a></li>
+          <li><a class="page-scroll" href="#services">Login</a></li>          
+          <li><a class="page-scroll" href="#about">Panduan</a></li>
+        </ul>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Header -->
+  <header style="background-image:url(assets/img/3218_Computer-power-abstract-binary-code.jpg)">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Selamat Datang</div>
+        <div class="intro-heading">Aplikasi PPDB SMP Kabupaten Tegal</div>
+        <a href="#services" class="page-scroll btn btn-primary">Login</a></div>
+    </div>
+  </header>
+</div>
+<!-- ===== services ===== -->
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading" style="color:#3680C1">Login</h2>
+        <h3 class="section-subheading text-muted">Silahkan Login</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+    <ul>
+  <li><a href="#" class="round green">Login<span class="round">That is, if you already have an account.</span></a></li>
+  <li><a href="#" class="round red">Sign Up<span class="round">But only if you really, really want to. </span></a></li>
+  <li><a href="#" class="round yellow">Demo<span class="round">Take a look. This product is totally rad!</span></a></li>
+</ul> 
+      <div class="col-md-6"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
+        <h4 class="service-heading">Login Admin</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+      <div class="col-md-6"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-automobile fa-stack-1x fa-inverse"></i></span>
+        <h4 class="service-heading">Login Ruang</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Team Section ===== -->
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading" style="color:#3680C1">Panduan</h2>
+        <h3 class="section-subheading text-muted">Panduan Penggunaan Aplikasi PPDB SMP Kab Tegal</h3>
+      </div>
+    </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== Team Section ===== -->
+<!-- ===== Contact Us ===== -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 col-md-offset-">
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h4 style="color:#3680C1">Tim Pengembang Aplikasi PPDB SMP Kab Tegal</h4>
+        <h4 style="color:#3680C1">Copyright &copy; 2018 All Rights Reserved</h4>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
