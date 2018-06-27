@@ -24,7 +24,7 @@ $RootMenu->AddMenuItem(5, "mi_ruang", $Language->MenuPhrase("5", "MenuText"), "r
 $RootMenu->AddMenuItem(1, "mi_kecamatan", $Language->MenuPhrase("1", "MenuText"), "kecamatanlist.php", 9, "", AllowListMenu('{27E315CC-B02A-4AE4-92E7-B346521044C4}kecamatan'), FALSE, FALSE, "glyphicon glyphicon-wrench");
 $RootMenu->AddMenuItem(7, "mi_bonus", $Language->MenuPhrase("7", "MenuText"), "bonuslist.php", 9, "", AllowListMenu('{27E315CC-B02A-4AE4-92E7-B346521044C4}bonus'), FALSE, FALSE, "glyphicon glyphicon-wrench");
 $RootMenu->AddMenuItem(10, "mi_mda", $Language->MenuPhrase("10", "MenuText"), "mdalist.php", 9, "", AllowListMenu('{27E315CC-B02A-4AE4-92E7-B346521044C4}mda'), FALSE, FALSE, "glyphicon glyphicon-wrench");
-$RootMenu->AddMenuItem(8, "mi_db_pd", $Language->MenuPhrase("8", "MenuText"), "db_pdlist.php", 9, "", AllowListMenu('{27E315CC-B02A-4AE4-92E7-B346521044C4}db_pd'), FALSE, FALSE, "glyphicon glyphicon-wrench");
+//$RootMenu->AddMenuItem(8, "mi_db_pd", $Language->MenuPhrase("8", "MenuText"), "db_pdlist.php", 9, "", AllowListMenu('{27E315CC-B02A-4AE4-92E7-B346521044C4}db_pd'), FALSE, FALSE, "glyphicon glyphicon-wrench");
 $RootMenu->AddMenuItem(78, "mci_Keluar", $Language->MenuPhrase("78", "MenuText"), "logout.php", -1, "", IsLoggedIn(), FALSE, TRUE, "glyphicon glyphicon-log-out");
 echo $RootMenu->ToScript();
 ?>
